@@ -1,4 +1,5 @@
 html {
+   
    --cell-size: 100px;
    --color-one: #000;
    --color-two: #aaa;
@@ -7,5 +8,33 @@ html {
    --color-five: blue;
    font-family: "Lucida Console", sans-serif;
    text-align: center;
-   background-color: #6f6e6b;
+      background-color: #fff;
+
+   
+}
+
+@media (max-width: 700px){
+
+ html{
+   --cell-size: 50px;
+   }  
+
+body {
+   width: 80vw;
+   background-color: #ffc5c5;
+   border: #0611e3;
+   border-width: 10px;
+}
+
+
+.en-tete {
+   display: flex;
+}
+
+.logo {
+   text-align: left;
+}
+.menu {
+   display: flex;
+}
 }
