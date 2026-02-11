@@ -2,6 +2,7 @@
 
 .container{
     background-color: #FFF;  
+   
 }
 
                         /**   Header   **/
@@ -53,24 +54,27 @@
     display: flex;
     height: 5vw;
     margin-bottom: 5vw;
-   justify-content: space-evenly;
+   
 }
 .button{
     display: flex;
+    padding: 0.5vw;
     width: 30vw;
-    
-    
     background: #e4b8c3;
     border: 1px solid #FFF;
     border-radius: 10px;
     box-shadow: 1.5vw 1vw 1vw #e99fb1
 }
+.en-tete__contact_tel{
+    margin: auto;
+}
+.en-tete__contact_mail{
+    margin: auto;
+}
 .en-tete__contact_icone-telephone{
     
     width: 3vw;
     height: 3vw;
-    margin: 0.7vw;
-    
 }
 .en-tete__contact_tel-text{
     margin: auto;
