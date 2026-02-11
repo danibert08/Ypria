@@ -1,8 +1,7 @@
 /**  screen  width <= 500px **/
 
 .container{
-    background-color: #FFF;  
-   
+    background-color: #FFF;   
 }
 
                         /**   Header   **/
@@ -17,19 +16,16 @@
 .en-tete__logo{
     text-align: center;
     margin-top: -5vw;
-    
 }
 .en-tete__logo_logo-img{
     width:30%;
     border-radius: 5%;
-    
 }
 .limelight-regular {
-  font-family: "Limelight", sans-serif;
-  font-weight: 400;
-  font-style: normal;
+    font-family: "Limelight", sans-serif;
+    font-weight: 400;
+    font-style: normal;
 }
-
 .en-tete__title{
     text-align: center;
     margin-top: 5vw;
@@ -52,41 +48,29 @@
 }
 .en-tete__contact{
     display: flex;
-    height: 5vw;
-    margin-bottom: 5vw;
     justify-content: space-evenly;
-   
+    margin-bottom: 5vw;
 }
 .button{
     display: flex;
-    padding: 0.5vw;
-    width: 30vw;
+    padding: 1vw;
+    min-width: 20vw;
     background: #e4b8c3;
     border: 1px solid #FFF;
     border-radius: 10px;
-    box-shadow: 1.5vw 1vw 1vw #e99fb1
-}
-.en-tete__contact_tel{
-    margin: auto;
-}
-.en-tete__contact_mail{
-    margin: auto;
+    box-shadow: 1.5vw 1vw 1vw #e99fb1;
+    justify-content: space-evenly;
+    align-items: center;
 }
 .en-tete__contact_icone-telephone{
     width: 3vw;
     height: 3vw;
+    margin-right: 1vw;;
 }
-.en-tete__contact_tel-text{
-    margin: auto;
-    align-items: center;
+.en-tete__contact-text{
     font-size: 2vw;
-    font-weight: bold;
-}
-.en-tete__contact_mail-text{
-    margin: auto;
-    align-items: center;
-    font-size: 1.8vw;
-    font-weight: bold;
+    font-weight: bold; 
+    padding-top: 0.3vw;
 }
 
 
@@ -174,28 +158,7 @@ footer{
     
 }
 .button{
-    
-    width: 20vw;
-    min-width: 120px;
-    
-    /* background: #f1cfcf; */
-    border: 1px solid #fff;
     border-radius: 20px;
-}
-.en-tete__contact_icone-telephone{
-
-    width:3vw;
-    height: 3vw;
-    margin: 0.7vw;
-}
-.en-tete__contact_tel-text{
-    display: flex;
-    justify-content: center;
-    font-size: 1.5vw;
-}
-.en-tete__contact_mail-text{
-    margin: auto;
-    align-items: center;
 }
 .services__ongles{
     width: 70vw;
