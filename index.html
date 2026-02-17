@@ -2,15 +2,16 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ypria</title>
     <link rel="stylesheet" href="public/assets/css/reset.css" class="css">
-    <link rel="stylesheet" href="public/assets/css/style1.css" class="css">
+    <link rel="stylesheet" href="public/assets/css/style.css" class="css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Limelight&display=swap" rel="stylesheet">
 </head>
-<body>
+<body id="body">
     <div class="container">
         
             <nav class="navbar navbar-top">      
@@ -44,6 +45,7 @@
                 <h2 class="en-tete__title_enseigne">
                     YPRIA_BEAUTY
                 </h2>
+                    
                 <h2 class="en-tete__title_commune">
                     Les Sables d'Olonne
                 </h2>
@@ -52,18 +54,12 @@
                     <!--     Header contact Tel and Mail witha button -->
 
             <div class="en-tete__contact">
-                <div class="button">
+                <button class="button">
                     <img class="en-tete__contact_icone" src="public/assets/icones/telephone.svg" alt=""> 
                     <a class=" en-tete__contact-text" href="tel:+330658012358">             
                         07 45 06 34 58 
                     </a>
-                </div>
-                <div class="button">              
-                    <img class="en-tete__contact_icone" src="public/assets/icones/email.svg" alt="">
-                    <a class="en-tete__contact-text" href="mailto:juniajeune8@gmail.com">                   
-                       M'écrire                 
-                    </a>
-                </div>
+                </button>
             </div>
         </header>
         <main>
@@ -110,18 +106,13 @@
                 </div>
 
                 <div class="en-tete__contact">
-                <div class="button">
+                <button id="make-up" class="button">
                     <img class="en-tete__contact_icone" src="public/assets/icones/telephone.svg" alt=""> 
                     <a class=" en-tete__contact-text" href="tel:+330658012358">             
                         07 45 06 34 58 
                     </a>
-                </div>
-                <div id="make-up" class="button">              
-                    <img class="en-tete__contact_icone" src="public/assets/icones/email.svg" alt="">
-                    <a class="en-tete__contact-text" href="mailto:juniajeune8@gmail.com">                   
-                       M'écrire                 
-                    </a>
-                </div>
+                </button>
+    
             </div>
 
                                 <!--     Make-up Service     -->
@@ -186,40 +177,61 @@
                 </div>
             </section>
 
-              <div class="en-tete__contact">
-                <div class="button">
+            <div class="en-tete__contact">
+                <button class="button">
                     <img class="en-tete__contact_icone" src="public/assets/icones/telephone.svg" alt=""> 
                     <a class=" en-tete__contact-text" href="tel:+330658012358">             
                         07 45 06 34 58 
                     </a>
-                </div>
-                <div class="button">              
-                    <img class="en-tete__contact_icone" src="public/assets/icones/email.svg" alt="">
-                    <a class="en-tete__contact-text" href="mailto:juniajeune8@gmail.com">                   
-                       M'écrire                 
-                    </a>
-                </div>
+                </button>
             </div>
+                                <!--    ******FORMULAIRE DE CONTACT *******-->
+
+
+            <form class="form-container">
+                <h2>Contactez-nous</h2>
+
+                <div class="form-group">
+                <label for="name">Nom</label>
+                <input type="text" id="name" name="name" placeholder="Votre nom" required>
+                </div>
+
+                <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="Votre email" required>
+                </div>
+
+                <div class="form-group">
+                <label for="subject">Sujet</label>
+                <input type="text" id="subject" name="subject" placeholder="Sujet">
+                </div>
+
+                <div class="form-group">
+                <label for="message">Message</label>
+                <textarea id="message" name="message" placeholder="Votre message" required></textarea>
+                </div>
+
+                <button class="button" type="submit">Envoyer</button>
+            </form>
 
                                 <!--   SOCIAL MEDIA ICONS SECTION -->
             
                          
-                    <div class="socialmedia">
-                        <p class="socialmedia-title">Pour me suivre :</p>
-                        <div class="socialmedia-icons">
-                            <a class="socialmedia-link" href="https://www.instagram.com/ypria_beauty?igsh=MWw1ZDdpdHQ1NjJnOQ==">             
-                                <img class="socialmedia-img" src="public/assets/icones/icons8-instagram-48.svg"  alt=""> 
-                            </a>
-                            <a class="socialmedia-link" href="https://www.tiktok.com/@ypria_?_r=1&_t=ZN-93t81PboCjD">             
-                                <img class="socialmedia-img" src="public/assets/icones/icons8-tic-tac-50.svg" alt=""> 
-                            </a>
-                            <a class="socialmedia-link" href="https://www.facebook.com/share/14VhSsPpgAV/?mibextid=wwXIfr">             
-                                <img class="socialmedia-img" src="public/assets/icones/icons8-facebook-48.svg"  alt=""> 
-                            </a>
-                        </div>
-                    </div> 
+                <div class="socialmedia">
+                    <p class="socialmedia-title">Pour me suivre :</p>
+                    <div class="socialmedia-icons">
+                        <a class="socialmedia-link insta"  href="https://www.instagram.com/ypria_beauty?igsh=MWw1ZDdpdHQ1NjJnOQ==">             
+                            <img class="socialmedia-img" src="public/assets/icones/icons8-instagram-48.svg"  alt=""> 
+                        </a>
+                        <a class="socialmedia-link tictac"  href="https://www.tiktok.com/@ypria_?_r=1&_t=ZN-93t81PboCjD">             
+                            <img class="socialmedia-img" src="public/assets/icones/icons8-tic-tac-50.svg" alt=""> 
+                        </a>
+                        <a class="socialmedia-link fbook"  href="https://www.facebook.com/share/14VhSsPpgAV/?mibextid=wwXIfr">             
+                            <img class="socialmedia-img" src="public/assets/icones/icons8-facebook-48.svg"  alt=""> 
+                        </a>
+                    </div>
+                </div> 
                 
-           
           
                 <nav class="navbar navbar-bottom">
                     <ul class="nav-links">
@@ -235,5 +247,6 @@
             <a class="mentions-link" href="public/mentions.html">Mentions légales</a>
         </footer>
     </div>
+    <script src="/public/assets/app.js" module="javascript" ></script>
 </body>
 </html>
