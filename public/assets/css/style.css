@@ -58,8 +58,8 @@ html{
 }
 
 .en-tete__title_metier{
-        margin: 1rem auto 1.5rem;
-        font-size: 1.5rem;
+    margin: 1rem auto 1.5rem;
+    font-size: 1.5rem;
 }
 
 .en-tete__title_enseigne{
@@ -94,11 +94,12 @@ html{
     transition: transform 0.15s ease, box-shadow 0.15s ease;
     font-size: 1.3rem;
     padding: 0.8rem; 
+    margin: auto;
 } 
 
 button:hover {
-      transform: translateY(-2px);
-      box-shadow: 0 6px 20px rgba(0,0,0,0.2);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(0,0,0,0.2);
 }
 
 button:active {
@@ -169,8 +170,10 @@ button:active {
     margin: 20px 5%;  
 }
 
-.photo:hover{
-    scale:2;
+@media(poiner:fine){       /***  zoom image only with mouse ***/
+    .photo:hover{
+        scale:2;
+    }
 }
 
 .photo5{
@@ -197,7 +200,7 @@ button:active {
                     /*** form contact ***/
 
 .form-container {
-    margin: 0 auto 2rem;
+    margin: 4rem auto 2rem;
     background: white;
     padding: 30px;
     border-radius: 16px;
@@ -228,8 +231,6 @@ label {
     font-size: 1.5rem;
 }
 
-
-
 input, textarea {
     padding: 12px;
     border-radius: 8px;
@@ -239,16 +240,15 @@ input, textarea {
 }
 
 input:focus, textarea:focus {
-outline: none;
-border-color: var(--services-box-shadow);
-box-shadow: 0 0 0 3px var(--button-box-shadow);
+    outline: none;
+    border-color: var(--services-box-shadow);
+    box-shadow: 0 0 0 3px var(--button-box-shadow);
 }
 
 textarea {
     resize: vertical;
     min-height: 100px;
 }
-
 
                     /********************/
                     /*** Social media ***/
@@ -342,7 +342,6 @@ textarea {
     transform: scale(1.5);
  }
 
-
                     /************************/
                     /*** Mentions Légales ***/
 
@@ -352,11 +351,13 @@ textarea {
     padding-bottom: 2rem;
     font-size: 2em;
 }
+
 .return-button{
-   margin: auto;
+    margin: auto;
 }
+
 .return-button a{
-   color: var(--button-text-color);
+    color: var(--button-text-color);
 }
 
 .footer-nav{
@@ -405,15 +406,14 @@ textarea {
                     /** Screen width < 480 px **/
 
 @media (max-width: 480px) {
-      .form-container {
+    .form-container {
         padding: 20px;
-      }
-
-      input, textarea {
+    }
+    input, textarea {
         font-size: 15px;
         padding: 11px;
-      }
     }
+}
 
                     /*****************************/
                     /**  Screen width  > 570 px **/
@@ -515,7 +515,7 @@ textarea {
         margin: auto; 
     }
     .en-tete__logo{
-    margin-top: -7rem;
+        margin-top: -7rem;
     }
     .en-tete__title_metier{
         margin: 5rem 5rem 5rem;
@@ -531,7 +531,7 @@ textarea {
     }
     .button{
         border-radius: 10px;
-        min-width: 10rem;
+        min-width: 10rem;      
     }
     .en-tete__contact_icone{
         width: 3rem;
@@ -561,7 +561,7 @@ textarea {
         font-size: 3rem;
     }  
     .mentions-link{
-      font-size: 1.5rem;
+        font-size: 1.5rem;
     }
 }
 
