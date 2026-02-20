@@ -1,17 +1,17 @@
 html{
-   
-    --button-bg-color: #e4b8c3;
-    --button-border-color:white;
-    --button-box-shadow:  #e99fb1;
-    --button-text-color: black;
-    --services-box-shadow: #e99fb1;
+    
+   --button-bg-color: #ced6e0;
+    --button-border-color:black;
+    --button-box-shadow:  #a4b0be;
+    --services-box-shadow: #a4b0be;
     --photo-shadow: #2e2027;
-    --socialmedia-title-color: purple;
-    --navbar-bg-color: #e99fb1;
+    --socialmedia-title-color: #57606f;
+    --navbar-bg-color: #a4b0be;
     --navbar-text-color: white;
     --nav-links-hover-color: black;
     --nav-links-hover-scale: scale(1.08);
-    --container-bg-color: white; 
+    --container-bg-color: white;
+
     font-size: 62.5%;
 }
 
@@ -58,8 +58,8 @@ html{
 }
 
 .en-tete__title_metier{
-    margin: 1rem auto 1.5rem;
-    font-size: 1.5rem;
+        margin: 1rem auto 1.5rem;
+        font-size: 1.5rem;
 }
 
 .en-tete__title_enseigne{
@@ -71,13 +71,14 @@ html{
 .en-tete__title_commune{
     font-weight: bold;
     font-size: 1rem;
+    margin-bottom: 2rem;
 }
 
 .en-tete__contact{
     display: flex;
     justify-content: space-evenly;
-    margin-bottom: 1.5rem;
-    margin-top: 1.5rem;
+    margin-bottom: 2.5rem;
+    margin-top: 2.5rem;
 }
 
 .button{ 
@@ -86,7 +87,6 @@ html{
     background: var(--button-bg-color);
     border: 1px solid var(--button-border-color);
     border-radius: 5px;
-    color: var(--button-text-color);
     box-shadow: 7px 5px 5px var(--button-box-shadow);
     justify-content: space-evenly;
     align-items: center;
@@ -94,12 +94,12 @@ html{
     transition: transform 0.15s ease, box-shadow 0.15s ease;
     font-size: 1.3rem;
     padding: 0.8rem; 
-    margin: auto;
+    margin:auto;
 } 
 
 button:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 6px 20px rgba(0,0,0,0.2);
+      transform: translateY(-2px);
+      box-shadow: 0 6px 20px rgba(0,0,0,0.2);
 }
 
 button:active {
@@ -119,26 +119,25 @@ button:active {
 .services{
     display: flex;
     flex-direction: column;
-    margin: auto;
-    padding-top: 1rem;
+    margin:  2.5rem auto 2.5rem;
     width:100%;
 }
 
 .services__title{
     font-weight: bold;
     font-size: 2rem;
-    text-align: center;
-    margin-bottom: 3vw;
+    margin: 0rem auto 2.5rem;
 }
 
 .services__lambda{
     display: flex;
-    margin: 3vw auto ;
+    margin:  auto ;
     align-items: center;
     box-shadow: 0 0 1rem var(--services-box-shadow);
     flex-direction: column;
     width: 80%;
     border-radius: 20px;  
+    padding-bottom: 3rem;
 }
 
 .services__lambda_title{
@@ -157,7 +156,13 @@ button:active {
 }
 
 .services__lambda_photos{
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.map{
+    margin: 2rem auto 0;
 }
 
                     /*********************************/
@@ -170,37 +175,40 @@ button:active {
     margin: 20px 5%;  
 }
 
-@media(poiner:fine){       /***  zoom image only with mouse ***/
+/* @media(pointer:fine){
     .photo:hover{
         scale:2;
     }
+} */
+
+/* .photo2{
+    transform: rotate(0deg) translate(0vw, -10rem);
 }
 
-.photo5{
-    transform: rotate(0deg) translate(0vw, -4vw);
+.photo3{
+    transform: rotate(0deg) translate(0vw, -8rem);
 }
 
+.photo6{
+    transform: rotate(0deg) translate(0vw, -10rem);   
+}
+
+.photo7{
+    transform: rotate(0deg) translate(0vw, -7rem);
+}
 .photo8{
-    transform: rotate(0deg) translate(0vw, -4vw);
-}
-
-.photo9{
-    transform: rotate(0deg) translate(0vw, -4vw);   
-}
-
-.photo13{
-    transform: rotate(0deg) translate(0vw, -5vw);
+    transform: rotate(0deg) translate(0vw, -5rem);
 }
 
 .photo18{
-    transform: rotate(0deg) translate(0vw, -1vw);
-}
+    transform: rotate(0deg) translate(0vw, -3rem);
+} */
  
                     /*********************/
                     /*** form contact ***/
 
 .form-container {
-    margin: 4rem auto 2rem;
+    margin: 2rem auto 2rem;
     background: white;
     padding: 30px;
     border-radius: 16px;
@@ -212,7 +220,7 @@ button:active {
 
 .form-container h2 {
     text-align: center;
-    margin-bottom: 20px;
+    margin-bottom: 2rem;
     color: #333;
     font-weight: bold;
     font-size: 2rem;
@@ -249,6 +257,7 @@ textarea {
     resize: vertical;
     min-height: 100px;
 }
+
 
                     /********************/
                     /*** Social media ***/
@@ -342,22 +351,14 @@ textarea {
     transform: scale(1.5);
  }
 
+
                     /************************/
                     /*** Mentions Légales ***/
 
 .mentions{
     width:80%;
-    margin: auto;
+    margin:auto;
     padding-bottom: 2rem;
-    font-size: 2em;
-}
-
-.return-button{
-    margin: auto;
-}
-
-.return-button a{
-    color: var(--button-text-color);
 }
 
 .footer-nav{
@@ -409,6 +410,7 @@ textarea {
     .form-container {
         padding: 20px;
     }
+
     input, textarea {
         font-size: 15px;
         padding: 11px;
@@ -437,7 +439,7 @@ textarea {
     }
     .en-tete__contact{
         margin-bottom: 3rem;
-        margin-top: 1rem;
+        margin-top: 3rem;
     }
     .button{
         border-radius: 1rem;
@@ -446,7 +448,7 @@ textarea {
     }
     .services__title{
         font-size: 3rem;
-        margin-bottom: 1rem;
+        margin-bottom: 0 auto 3rem;
     }
     .services__lambda{
         width:100%;
@@ -458,9 +460,6 @@ textarea {
     }
     .services__lambda_text{
         font-size: 1.8rem;
-    }
-    .photo:hover{
-        scale: 1.5;
     }
     .form-container {
         padding: 20px;
@@ -503,8 +502,12 @@ textarea {
         text-align: center;
         padding: 0em 0em 2em;
     }
+    .mentions-link{
+        font-size: 1.2rem;
+    }
 }
 
+ 
                     /*******************************/
                     /***  Screen width > 1000 px ***/
 
@@ -527,11 +530,14 @@ textarea {
     }
     .en-tete__title_commune{    
         font-size: 3rem;
-        margin-bottom: 5rem;
+        margin-bottom: 3rem;
     }
     .button{
         border-radius: 10px;
-        min-width: 10rem;      
+        min-width: 10rem;
+    }
+    .en-tete__contact{
+        margin: 4rem auto 4rem;
     }
     .en-tete__contact_icone{
         width: 3rem;
@@ -542,9 +548,12 @@ textarea {
         font-weight: bold; 
         margin-right: 0.8rem;  
     }
+    .services{
+        margin: 4rem auto 4rem;
+    }
     .services__title{
         font-size: 4rem;
-        margin-top: 5rem;
+        margin: 0rem auto 4rem;
     }
     .services__lambda_title{
         font-size: 3rem;
@@ -560,10 +569,9 @@ textarea {
     .nav-links a{
         font-size: 3rem;
     }  
-    .mentions-link{
-        font-size: 1.5rem;
-    }
 }
+
+
 
                     /*************************/
                         /*** Body themes ***/
@@ -680,4 +688,22 @@ body.grey{
     --container-bg-color: white;
 }
 
+body.june{
+    --button-bg-color: #e4b8c3;
+    --button-border-color:white;
+    --button-box-shadow:  #e99fb1;
+    --services-box-shadow: #e99fb1;
+    --photo-shadow: #2e2027;
+    --socialmedia-title-color: purple;
+    --navbar-bg-color: #e99fb1;
+    --navbar-text-color: white;
+    --nav-links-hover-color: black;
+    --nav-links-hover-scale: scale(1.08);
+    --container-bg-color: white; 
+}
 
+
+select {
+  font-size: 0.9rem;
+  padding: 2px 5px;
+}
