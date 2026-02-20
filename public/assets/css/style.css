@@ -361,9 +361,20 @@ textarea {
 .mentions{
     width:80%;
     min-height: auto ;
-    margin: 0 auto 2rem;
+    margin: 3rem auto 2rem;
     padding-bottom: 2rem;
-
+}
+.mentions > h1 {
+    font-size: 2rem;
+    text-align: center;
+}
+.mentions  h2 {
+    font-size: 1.5rem;
+    font-family: bold;
+    text-decoration: underline;
+}
+.button-bottom{
+    margin: 2rem auto 2rem;
 }
 
 .footer-nav{
