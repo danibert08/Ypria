@@ -96,6 +96,7 @@ html{
     font-size: 1.3rem;
     padding: 0.8rem; 
     margin:auto;
+    color: var(--button-text-color)
 } 
 
 button:hover {
@@ -113,9 +114,7 @@ button:active {
     height: 1rem;
     margin-right: 0.8rem;   
 }
-.en-tete__contact-text{
-    color: var(--button-text-color);
-}
+
 
                     /**********************************/
                     /*** Main --> Section Services ***/
