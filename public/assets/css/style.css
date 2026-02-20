@@ -80,6 +80,10 @@ html{
     justify-content: space-evenly;
     margin-bottom: 2.5rem;
     margin-top: 2.5rem;
+  
+}
+.en-tete__contact a{
+    padding-top: 0.2rem;
 }
 
 .button{ 
@@ -99,12 +103,12 @@ html{
     color: var(--button-text-color);
 } 
 
-button:hover {
+.button:hover {
       transform: translateY(-2px);
       box-shadow: 0 6px 20px rgba(0,0,0,0.2);
 }
 
-button:active {
+.button:active {
     transform: translateY(0);
     box-shadow: 0 3px 10px rgba(0,0,0,0.2);
 }
@@ -433,7 +437,6 @@ textarea {
     .button{
         border-radius: 1rem;
         padding: 1rem;
-        font-size: 1.5rem;
     }
     .services__title{
         font-size: 3rem;
@@ -522,7 +525,7 @@ textarea {
     }
     .button{
         border-radius: 10px;
-        min-width: 10rem;
+        
     }
     .en-tete__contact{
         margin: 4rem auto 4rem;
