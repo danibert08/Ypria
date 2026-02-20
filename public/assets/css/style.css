@@ -96,7 +96,7 @@ html{
     font-size: 1.3rem;
     padding: 0.8rem; 
     margin:auto;
-    color: var(--button-text-color)
+    color: var(--button-text-color);
 } 
 
 button:hover {
@@ -360,8 +360,10 @@ textarea {
 
 .mentions{
     width:80%;
-    margin:auto;
+    min-height: auto ;
+    margin: 0 auto 2rem;
     padding-bottom: 2rem;
+
 }
 
 .footer-nav{
@@ -696,6 +698,7 @@ body.june{
     --button-border-color:white;
     --button-box-shadow:  #e99fb1;
     --services-box-shadow: #e99fb1;
+    --button-text-color: black;
     --photo-shadow: #2e2027;
     --socialmedia-title-color: purple;
     --navbar-bg-color: #e99fb1;
