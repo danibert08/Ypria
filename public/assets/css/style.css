@@ -1,8 +1,9 @@
 html{
     
-   --button-bg-color: #ced6e0;
+    --button-bg-color: #ced6e0;
     --button-border-color:black;
     --button-box-shadow:  #a4b0be;
+    --button-text-color: black;
     --services-box-shadow: #a4b0be;
     --photo-shadow: #2e2027;
     --socialmedia-title-color: #57606f;
@@ -111,6 +112,9 @@ button:active {
     width: 1rem;
     height: 1rem;
     margin-right: 0.8rem;   
+}
+.en-tete__contact-text{
+    color: var(--button-text-color);
 }
 
                     /**********************************/
