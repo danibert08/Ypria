@@ -177,35 +177,6 @@ button:active {
     width: 35%; 
     margin: 20px 5%;  
 }
-
-/* @media(pointer:fine){
-    .photo:hover{
-        scale:2;
-    }
-} */
-
-/* .photo2{
-    transform: rotate(0deg) translate(0vw, -10rem);
-}
-
-.photo3{
-    transform: rotate(0deg) translate(0vw, -8rem);
-}
-
-.photo6{
-    transform: rotate(0deg) translate(0vw, -10rem);   
-}
-
-.photo7{
-    transform: rotate(0deg) translate(0vw, -7rem);
-}
-.photo8{
-    transform: rotate(0deg) translate(0vw, -5rem);
-}
-
-.photo18{
-    transform: rotate(0deg) translate(0vw, -3rem);
-} */
  
                     /*********************/
                     /*** form contact ***/
@@ -354,25 +325,27 @@ textarea {
     transform: scale(1.5);
  }
 
-
                     /************************/
                     /*** Mentions Légales ***/
 
 .mentions{
     width:80%;
-    min-height: auto ;
     margin: 3rem auto 2rem;
     padding-bottom: 2rem;
-}
-.mentions > h1 {
     font-size: 2rem;
-    text-align: center;
 }
+
+.mentions > h1 {
+    font-size: 4rem;
+    text-align: center;
+    font-weight: bold;
+}
+
 .mentions  h2 {
-    font-size: 1.5rem;
-    font-family: bold;
+    font-size: 3rem;
     text-decoration: underline;
 }
+
 .button-bottom{
     margin: 2rem auto 2rem;
 }
@@ -523,13 +496,12 @@ textarea {
     }
 }
 
- 
                     /*******************************/
                     /***  Screen width > 1000 px ***/
 
 @media screen and (min-width: 1000px){
     .container{
-        background-color: #FFF;
+        background-color: var(--container-bg-color);
         width: 70vw;
         margin: auto; 
     }
@@ -586,8 +558,6 @@ textarea {
         font-size: 3rem;
     }  
 }
-
-
 
                     /*************************/
                         /*** Body themes ***/
@@ -719,8 +689,3 @@ body.june{
     --container-bg-color: white; 
 }
 
-
-select {
-  font-size: 0.9rem;
-  padding: 2px 5px;
-}
